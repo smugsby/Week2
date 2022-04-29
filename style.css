@@ -14,7 +14,12 @@
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
-  
+  h2{
+  text-align: center;
+  font-size: 48px;
+  color: black;
+}
+
   
   /* HEADER NAV START */
   
@@ -91,16 +96,31 @@
       border-style: solid;
       border-radius: 10px;
   }
-  #me h2{
-      text-align: center;
-      font-size: 48px;
-      color: black;
-  }
-  #me {
+/*Portfolio styling*/
+  .me {
       display: block;
       padding-left: 30%;
       padding-right: 30%;
   }
-  #me p{
+  .me p{
       color: black;
   }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
