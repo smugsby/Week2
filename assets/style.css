@@ -18,12 +18,13 @@
   text-align: center;
   font-size: 48px;
   color: black;
+  margin: 25px;
 }
 
   
-  /* HEADER NAV START */
+  /* HEADER NAV START/ FOOTER BAR STYLE */
   
-  header {
+  header, footer {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
     display: flex;
@@ -32,7 +33,6 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 80%;
@@ -101,24 +101,31 @@
       display: block;
       padding-left: 30%;
       padding-right: 30%;
+      color: black;
+ 
   }
   .me p{
       color: black;
       font-size: large;
     }
+
   .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
     margin-left: 20%;
     margin-right: 20%;
+    border: 2px;
+    border-color: black;
+    border-style: solid; 
   }
+
   
-  /* Create four equal columns that sits next to each other */
+  /* Create 2 equal columns that sits next to each other */
   .column {
     flex: 25%;
     max-width: 100%;
-    padding: 0 4px;
+    padding: 10px;
     position: relative;
   }
   
@@ -131,22 +138,40 @@
   .zoom {
     padding: 5px;
     background-color: black;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s; /* Animation time */
     width: 200px;
     height: 300px;
     margin: 0 auto;
   }
   
   .zoom:hover {
-    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.05); /* 105% zoom to prevent overlap */
   }
-  /* Bottom right text */
-.textbox {
+/* text overlay on images*/
+.center {
   position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  top: 47%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+}
+.center2 {
+  position: absolute;
+  top: 95%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+}
+
+.contact{
+  display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px;
+    border-color: black;
+    border-style: solid; 
+    font-size: 25px;
+    margin-bottom: 50px;
 }
